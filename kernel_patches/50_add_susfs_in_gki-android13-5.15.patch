@@ -415,6 +415,7 @@ index ff5e6455c..8ab3a63f9 100644
  
  #include "pnode.h"
  #include "internal.h"
+ #include <trace/hooks/blk.h>
  
 +#ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
 +extern bool susfs_is_current_ksu_domain(void);
@@ -1273,7 +1274,6 @@ index 49650e54d..403d9353c 100644
  
  #include "pnode.h"
  #include "internal.h"
- #include <trace/hooks/blk.h>
  
 +#ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
 +extern bool susfs_hide_sus_mnts_for_non_su_procs;
